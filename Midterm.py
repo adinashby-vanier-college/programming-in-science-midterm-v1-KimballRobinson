@@ -30,7 +30,7 @@ def hollow_right_triangle(n):
         triangle += "*"
         for j in range(i - 1):
             triangle += " "
-        if 0 < i:
+        if i != 0:
             triangle += "*"
         triangle += "\n"
 
@@ -64,25 +64,3 @@ def inverted_pyramid(n):
 
     # returns pyramid without the last "\n"
     return pyramid.rstrip()
-
-# ----------------------------------------------------------------
-print(area_of_circle(5))
-print()
-
-print(hollow_right_triangle(3))
-print()
-
-print(hollow_right_triangle(4))
-print()
-
-print(hollow_right_triangle(5))
-print()
-
-print(inverted_pyramid(2))
-print()
-
-print(inverted_pyramid(3))
-print()
-
-print(inverted_pyramid(5))
-print()
